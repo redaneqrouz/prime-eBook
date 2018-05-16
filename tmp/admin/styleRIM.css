@@ -1,0 +1,262 @@
+.ilyas li{display: inline-block}
+
+
+
+            @charset "utf-8";*{margin:0;padding:0;outline:0}
+            header{background-color: #1a1917;border-bottom:10px;border-bottom-color: #444}
+            body {/*background-image:url("bo.jpg");*/background-color:#efefef;background-repeat:no-repeat;background-attachment:fixed;overflow-x: hidden}
+            a{text-decoration:none;color:#323e35;font-size:100%}
+            #wrapper_inside{margin:auto;width:1088px}
+            nav.genre_info{background-color: transparent/*rgba(0, 0, 25, 0.3)*/;float:left;width: 100%;margin-top:0px;border-radius:5px;padding-left: 30;}
+            nav.genre_info ul{margin:0;padding:0;float:left;/*width:100%*/}
+            nav.genre_info ul li{ float:left;list-style:none;margin:0px 18px}
+            nav.genre_info ul li a{display:block;color:#fff;padding:0 0 14px 0px;text-transform:uppercase;font-family:Tahoma,Geneva,sans-serif;font-size:14px}
+            
+            nav.genre_info ul li a:hover,
+            nav.genre_info ul li.active a{color:#66b3ff;border-bottom:2px solid #66b3ff}
+            nav.genre_info ul li a{padding:0px}
+            section.menu{float:left;width:100%;padding:12px 0 12px 0px;background-color:#000/* rgba(0, 0, 25, 0.5)*/}/*12.0.35.0*/
+            section.menu .logo{float:left;padding-right:40px;padding-left:40px}
+            section.menu .genre{float:left;padding-top: 6}
+            section.menu .search{float:right}
+            
+            .form .row{ float:left;/*border:.3px solid white;*/margin:20px 0 0 0;background-color:whitesmoke/*rgba(0, 0, 25, 0.5)*/}
+            .form .row input[type="text"]{border:0px;padding:0 10px;float:left;width:250px;background-color:transparent;color:black;line-height:30px;height:30px}
+            .form .row input[type="submit"]{background-image:url(search.png);background-repeat:no-repeat;background-position:left                                                                                 6px;height:30px;width:28px;border:0px;float:left;cursor:pointer;background-color:transparent}
+            .main_body{float:left;width:100%/*;border:1px solid #a1a1a1*/;margin-bottom:26px;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-mos-box-sizing:border-box;border-radius:5px}
+            section.content{float:left;width:100%;margin:15px 0;}
+            section.content section.content_left{float:left; width:514px;height:496px}/*728*/
+            section.content section.content_right{float:right;width:514px}/*300*/
+            .main_body_top.top{/*background-image:url(bluewood.jpg)*/background-color:#efefef;background-repeat:repeat;background-position:right top;/*border-top-left-radius: 5px;border-top-right-radius: 5px*/}
+            .best_seller{background-image:url(Best_Seller.png);background-repeat:no-repeat;background-position:center top;height:80px;width:80px;position:absolute;left:0px;bottom:0}
+            .main_body_pagination{position:absolute;right:0px;top:0px}
+            .pagination{padding:7px 0;float:right;margin-right:14px;}
+            ul.pages {display: inline-block;float:top right;padding: 0;margin: 0;}
+            ul.pages li {display: inline;}
+            ul.pages li a {color:#888;float: left;padding: 4px 8px;text-decoration: none;border-radius: 5px;}
+            ul.pages li a.active {background-color:#4d4d4d;color: white;border-radius: 5px;}
+            ul.pages li a:hover:not(.active) {background-color:dimgrey;}
+            .top_menu a:hover{color: #66b3ff;}
+            .top_menu{padding-top: 0;float:right}
+            .top_menu a{color: #a1a1a1;padding-left: 5px;font-size: 12px;}
+            .top_menu_info, .cart{/*background-color: rgba(0, 0, 25, 0.5);*/float:right;border-radius:5px;z-index: 100}
+            .top_menu_info{padding-bottom:7;}
+            .cart{position:inherit;right: auto;top: auto;margin-left: 10px;z-index: 100}
+            .cart a{display:block;width: 36px;height: 30px;float:right;background-image: url(cart.png);background-repeat: no-repeat;position: relative; z-index: 2}
+
+
+            .main_body_inside{/*background-color: rgba(0, 0, 25, 0.7);*/float:left;width:100%;border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;border:1px solid grey}
+            .main_body_inside .bottom{width:100%;font-size:12px;color:#959595;text-align:center;padding:6px 0}
+            .main_body_inside .bottom p.name{margin:0;padding:0;color:#fff;font-size:13px;font-family:mySecondFont;height:34px;overflow:hidden}
+
+            .main_body_top{padding:11px 66px;position:relative}
+            .main_body_top a{color:#888;font-family:Tahoma,Geneva,sans-serif;text-transform:uppercase;font-size:15px;margin:0;padding:0;overflow:hidden;white-space:nowrap}
+
+            .main_body_book{float:left;position:relative;margin:8px 6px;width:165px}
+            .main_body_book img{width:100%;height:214px}
+            .main_body_book a{display:block;color:black;font-family:Ubuntu Condensed ,arial,sans-serif;font-weight:normal!important}
+            .main_body_book a:hover{color:#888}
+
+ /* scientifique*/
+          /*.main_body_book1{float:left;position:relative;margin:8px 6px;width:925px;}
+            .main_body_book1 img{float: left; width:160px;height:220px}
+            .main_body_book1 a{color:#ffc119;font-weight:normal!important}
+            .main_body_book1 p{position: absolute;left: 180px; color:#fff;font-family:Tahoma,Geneva,sans-serif;text-transform:uppercase;font-size:15px;}
+            /*LIVRES*/
+            /*.main_body_book2{float:left;position:relative;margin:8px 6px;width:100%}
+            .main_body_book2 img{float: left; width:260px;height:340px}
+            .main_body_book2 p{position: relative;margin : 20px;padding-left:150px; padding-right:20px;left: 70px;
+	 color:#fff;font-family:Tahoma,Geneva,sans-serif;font-size:15px;}
+            .addtocart img{float: right; width:160px;height:80px;margin-right:150px;}
+           .main_body_inside r{position: relative;padding-right: 100px; font-size:15px;}
+            .mention  img{position:relative;left:500px;width:70px;height:50px;}
+        h4{position:relative;left:500px;color:#fff;font-family:Tahoma,Geneva,sans-serif;font-size:15px;}*/
+
+
+
+
+nav.genre_info ul.genre_menu > li .submenu .submenu_block {
+  float: left;
+  width: 178px;
+  margin-left: 40px;
+  padding: 5px 0 0;
+}
+
+nav.genre_info ul.genre_menu > li .submenu .submenu_block:last-child {
+  padding-right: 0;
+}
+nav.genre_info ul.genre_menu > li .submenu .submenu_block .subcategory_title {
+  font: 17px 'OpenSansRegular', sans-serif;
+  color: black;
+  padding: 0 0 15px;
+}
+
+nav.genre_info ul.genre_menu > li .submenu .submenu_block ul li {
+  font: 14px/20px 'OpenSansRegular', sans-serif;
+  padding: 0 0 8px;
+}
+nav.genre_info ul.genre_menu > li .submenu .submenu_block ul li a {
+  color: #0D96CB;
+  font: 14px 'OpenSansRegular', sans-serif;
+  text-transform: none;
+  border: 0;
+  white-space: normal;
+  margin-left: 0;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  text-decoration: none;
+  outline: none;
+}
+/*@media (max-width: 991px) {
+  nav.genre_info ul.genre_menu > li .submenu .submenu_block ul li a {
+    font-size: 15px;
+    padding: 0 0 2px;
+    display: inline-block;
+  }
+}*/
+nav.genre_info ul.genre_menu > li .submenu .submenu_block ul li a:hover {
+  color: #1bb5f0;
+}
+nav.genre_info ul.genre_menu > li .submenu .submenu_block ul li a.active,
+nav.genre_info ul.genre_menu > li .submenu .submenu_block ul li a.active:hover {
+  color: #ef672f;
+}
+
+
+
+
+
+
+nav.genre_info ul.genre_menu > li .submenu {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0s linear;
+  position: absolute;/*absolute*/
+  background-color: whitesmoke/*rgba(0, 0, 25, 0.9)*/;
+  text-align: left;
+  padding: 25px 23px;
+  top: -1000px;
+  visibility: hidden;
+  min-width: 516px;
+  z-index: -1;
+  left: 15px;
+  border-right: 1px solid #cac3b4;
+  border-left: 1px solid #cac3b4;
+  border-bottom: 1px solid #cac3b4;
+  box-shadow: none;
+  box-sizing: border-box;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+
+nav.genre_info ul.genre_menu > li:hover .submenu {
+  visibility:visible;
+  opacity: 1;
+  top: 19px;/*107*/
+}
+
+
+/*-------------------------------------*/
+nav.genre_info {
+  
+  position:absolute;
+
+  z-index: 1;
+  width: 100%;
+  
+}
+
+
+
+
+/* Menu */
+
+#menu {
+	float: left;
+	width: 860px;
+	height: 54px;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0px 0 0 20px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	display: block;
+	float: left;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	margin-right: 3px;
+	padding: 12px 20px;
+	letter-spacing: -.5px;
+	text-decoration: none;
+	
+	font: 16px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+
+#menu a:hover { 
+	text-decoration: none; 
+	color: #FFFFFF;
+}
+
+#menu .current_page_item a {
+	color: #FFFFFF;
+}
+
+
+
+/* Header  entête */
+
+#header {
+	width: 860px;
+	height: 52px;
+	margin: 0 auto;
+	background: url(images/img02.jpg) no-repeat left top;
+}
+
+
+
+/*scientifique*/
+            .main_body_book1{float:left;position:relative;/*margin:8px 6px;*/width:100%;border-top:1px solid grey}
+            .main_body_book1 img{float: left; width:160px;height:220px}
+            .main_body_book1 a{color:#ffc119;font-weight:normal!important}
+            .main_body_book1 p{position: absolute;left: 180px; color:black;
+font-family:Tahoma,Geneva,sans-serif;font-size:15px;background-color:#efefef}
+
+/*LIVRES*/
+
+            .main_body_book2{float:left;position:relative;margin:8px 6px;width:100%}
+            .main_body_book2 img{float: left; width:260px;height:340px}
+            .main_body_book2 p{position: relative;margin : 20px;right:80px;left: 70px;
+	 color:black;font-family:Tahoma,Geneva,sans-serif;font-size:15px;}
+            .addtocart img{float: right; width:160px;height:80px;margin-right:150px;}
+           .main_body_inside r{position: relative;right: 50px; font-size:15px;}
+            .mention  img{position:relative;left:750px;width:170px;height:100px;}
+        h4{position:relative;left:500px;color:#fff;font-family:Tahoma,Geneva,sans-serif;font-size:15px;}
+
+
+          /* .center3 {
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+}
+            .center2 {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+}*/
+.classajout{position: relative;margin-left: 250px;margin-top: 10px; width: 180px;height: 40px;padding: inherit; 
+            font-family:Tahoma;font-size:20px;background-color: transparent;}
+            .classdetail{position: relative;margin-left: 750px;bottom: 50px;margin-top: 10px;width: 180px;height: 40px;padding: inherit; 
+            font-family:Tahoma;font-size:20px;background-color:#efefef}
+.main_body_book1 .pri{background-color:grey;color:#fff;margin-left: 250px;margin-top: 120px;width: 180px;height: 40px;padding-top:7px;font-family:Tahoma,Geneva,sans-serif;font-size:20px;}
+ div.classdetailprix{position: relative;margin-left:320px;margin-top: 0px;width: 180px;height: 40px;padding-top:7px; 
+            font-family:Tahoma;font-size:20px;background-color: darkred;}
